@@ -41,11 +41,11 @@ function SignIn() {
   return <button onClick={signInWithGoogle}>Sign in With Google</button>;
 }
 
-function SignOut() {
-  return (
-    auth.currentUser && <button onClick={() => auth.signOut()}>Sign Out</button>
-  );
-}
+// function SignOut() {
+//   return (
+//     auth.currentUser && <button onClick={() => auth.signOut()}>Sign Out</button>
+//   );
+// }
 
 function ChatRoom() {
 
@@ -99,7 +99,7 @@ function ChatMessage(props) {
 
   return (
     <div className={`message ${messageClass}`}>
-      <img src={photoURL} />
+      <img src={photoURL} alt='User' />
       <p>{text}</p>
     </div>
   );
